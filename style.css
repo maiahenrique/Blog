@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap");
+
+:root {
+  --font1: "Montserrat", sans-serif;
+  --font2: "Roboto", sans-serif;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #f3f0eb;
+}
+
+header,
+footer {
+  background-color: #e7f2f4ef;
+  background: linear-gradient(to right, #e7f2f4ef, #b3e6efef);
+  text-align: center;
+}
+
+header > h1 {
+  padding-top: 50px;
+  font-family: var(--font1);
+  color: #05818d;
+  transition: 0.4s;
+}
+
+header > h1:hover {
+  font-size: 2.5em;
+  cursor: pointer;
+}
+
+header > p {
+  padding-bottom: 50px;
+  font-family: var(--font2);
+}
+
+header a,
+footer a {
+  text-decoration: none;
+  font-weight: bolder;
+  padding: 5px;
+}
+
+header a:hover,
+footer a:hover {
+  text-decoration: underline;
+}
+
+.social-media {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+.social-media img {
+  display: block;
+  width: 1.7vw;
+  transition: 0.4s;
+}
+
+img:hover {
+  width: 2.4vw;
+}
+
+main {
+  margin: 0px 40px 40px 40px;
+  background-color: #b4b0aaee;
+  box-shadow: 4px 4px 8px 2px #0101012b;
+}
+
+section {
+  padding: 15vh;
+  line-height: 2em;
+}
+
+section > div > p {
+  padding-bottom: 2em;
+}
+
+.normal {
+  background-color: #ffffffee;
+}
+
+.image {
+  background-color: #eff9fa;
+}
+
+.title {
+  font-family: var(--font1);
+  font-size: 2em;
+  color: #05818d;
+  padding-bottom: 20px;
+}
+
+.text-normal {
+  font-family: var(--font2);
+  padding-top: 20px;
+}
+
+.text-normal > p::first-letter {
+  font-size: xx-large;
+}
+
+.text-img {
+  font-family: var(--font2);
+  background-size: cover;
+}
+
+#img-1 {
+  background-image: url(./imgs/img-1.jpg);
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 60vh;
+}
+
+#img-2 {
+  background-image: url(./imgs/img-2.jpg);
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 55vh;
+}
+
+#img-3 {
+  background-image: url(./imgs/img-3.jpg);
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 50vh;
+}
+
+footer {
+  font-family: var(--font2);
+  padding: 15px;
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  body {
+    width: 100%;
+    height: auto;
+  }
+
+  .social-media {
+    display: none;
+  }
+
+  main {
+    margin: 0;
+  }
+
+  section > div > p {
+    width: 100%;
+    height: auto;
+    line-height: auto;
+  }
+
+  .title > p {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 965px) {
+  #img-1,
+  #img-2,
+  #img-3 {
+    background-image: none;
+  }
+}
