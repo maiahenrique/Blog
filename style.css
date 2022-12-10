@@ -72,13 +72,12 @@ main {
   background-color: #b4b0aaee;
   box-shadow: 4px 4px 8px 2px #0101012b;
 }
-
-section {
+article {
   padding: 15vh;
   line-height: 2em;
 }
 
-section > div > p {
+article > div > p {
   padding-bottom: 2em;
 }
 
@@ -155,7 +154,7 @@ footer {
     margin: 0;
   }
 
-  section > div > p {
+  article > div > p {
     width: 100%;
     height: auto;
     line-height: auto;
